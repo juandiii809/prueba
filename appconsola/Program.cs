@@ -12,5 +12,5 @@ public class Vehiculos
     public decimal kilometraje;
     public bool anda;
     public DateTime fecha_compra;
-    public Dueños Dueño;
+    public Dueños? Dueño;
 }
