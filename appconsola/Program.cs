@@ -1,16 +1,31 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Data.Common;
+
 Console.WriteLine("Hello, World!");
-public class Dueños
+
+Personas persona = new Personas();
+persona.id = 1;
+persona.nombre = "carlos";
+persona.estatura = 1.75m;
+persona.vivo = false;
+persona.Estado = new Estados() {id=1, nombre = "viudo"};
+
+public class Estados
 {
     public int? id;
     public string? nombre;
 }
-public class Vehiculos
+public class Personas
 {
-    public int? llantas;
-    public string? placa;
-    public decimal kilometraje;
-    public bool anda;
-    public DateTime fecha_compra;
-    public Dueños? Dueño;
+    public int? id;
+    public string? nombre;
+    public decimal estatura;
+    public bool vivo;
+    public DateTime fecha;
+    public Estados? Estado;
+}
+
+public class Estudiantes : Personas
+{
+    public int? carnet;
 }
