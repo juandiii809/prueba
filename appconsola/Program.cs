@@ -8,6 +8,7 @@ persona.id = 1;
 persona.nombre = "carlos";
 persona.estatura = 1.75m;
 persona.vivo = false;
+persona.fecha = DateTime.Now;
 persona.Estado = new Estados() {id=1, nombre = "viudo"};
 
 public class Estados
